@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Added to keep logo and menu aligned */
+    padding: 15px 50px;
+    position: fixed;
+    z-index: 1000;
+    
+    /* The "Not Dry" additions */
+    background: rgba(16, 21, 16, 0.8); /* Dark tint so the blur looks better */
+    backdrop-filter: blur(10px); 
+    border-bottom: 1px solid rgba(0, 255, 136, 0.1); /* Subtle neon line */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Added depth */
+}
+
+.logo {
+    color: #00ff88;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.menu a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.menu a:hover {
+    color: #00ff88;
+    text-shadow: 0 0 8px rgba(0, 255, 136, 0.5); /* Subtle glow on hover */
+}
+
+/* Added active state */
+.menu a.active {
+    color: #00ff88;
+    border-bottom: 2px solid #00ff88;
+    padding-bottom: 5px;
+}

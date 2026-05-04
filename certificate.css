@@ -1,0 +1,59 @@
+/* PAGE BACKGROUND (so it matches your navbar theme) */
+body {
+    background: #0a0f0a;
+    color: white;
+}
+/* MAIN SECTION */
+.certificates {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.certificates h2 {
+    color: #00ff88;
+    margin-bottom: 30px;
+}
+
+/* FLEXBOX CONTAINER */
+.cert-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* THE CARD */
+.cert-card {
+    width: 280px;
+    padding: 15px;
+    background: #1a1a1a; /* Solid dark background is simpler than glassmorphism */
+    border: 1px solid #333;
+    border-radius: 10px;
+    transition: 0.3s; /* Simple, smooth transition */
+}
+
+/* THE IMAGE */
+.cert-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* THE TEXT */
+.cert-card h3 {
+    color: #00ff88;
+    margin: 15px 0 10px;
+    font-size: 18px;
+}
+
+.cert-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ccc;
+    text-align: left;
+}
+
+/* SIMPLE HOVER */
+.cert-card:hover {
+    border-color: #00ff88;
+    transform: translateY(-5px);
+}

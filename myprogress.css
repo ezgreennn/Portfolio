@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0a0f0a;
+    color: white;
+}
+
+
+/* MY PROGRESS SECTION - Simple Version */
+.progress-section {
+    padding: 120px 80px;
+    background: #0d140d;
+    min-height: 100vh;
+}
+
+.section-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.progress-section h2 {
+    font-size: 36px;
+    color: #00ff88;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    text-align: center;
+    opacity: 0.8;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background: rgba(255,255,255,0.06);
+    padding: 24px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-card h3 {
+    color: #00ff88;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    opacity: 0.85;
+    line-height: 1.5;
+}
+
+.progress-note {
+    text-align: center;
+    margin-top: 60px;
+    opacity: 0.75;
+    font-size: 16px;
+}
+
+/* Simple Back Button */
+.back-button {
+    display: inline-block;
+    color: #00ff88;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #00ff88;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #00ff88;
+    color: black;
+}

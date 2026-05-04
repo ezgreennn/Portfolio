@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0a0f0a;
+    color: white;
+    
+}
+
+.logo {
+    color: #00ff88;
+}
+
+.menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #00ff88;
+}
+
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    background: linear-gradient(rgba(10, 15, 10, 0.75), rgba(10, 15, 10, 0.85)), 
+                url('https://static.vecteezy.com/system/resources/thumbnails/017/798/493/small/dark-abstract-green-light-background-with-hexagon-mesh-pattern-decoration-vector.jpg') center/cover no-repeat;
+}
+
+/* LEFT */
+.left h1 {
+    font-size: 50px;
+    color: #00ff88;
+}
+
+.left h2 {
+    margin: 10px 0;
+}
+
+.left p {
+    max-width: 400px;
+    margin: 20px 0;
+    opacity: 0.8;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 1px solid #00ff88;
+    color: #00ff88;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #00ff88;
+    color: black;
+}
+
+/* RIGHT CARD */
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    box-shadow: 0 0 40px rgba(0,255,136,0.3);
+}
+
+.card img {
+    width: 150px;
+    border-radius: 15px;
+}
+
+/* ABOUT SECTION */
+.about {
+    padding: 100px 80px;
+    background: #0d140d;
+}
+
+.about-container {
+    max-width: 800px;
+}
+
+.about h2 {
+    font-size: 35px;
+    color: #00ff88;
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+.about span {
+    color: #00ff88;
+    font-weight: bold;
+}
+
+
+/* ========== FOOTER ========== */
+footer {
+    background: #0a0f0a;
+    padding: 60px 80px 30px;
+    border-top: 1px solid rgba(0, 255, 136, 0.2);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.footer-left .logo {
+    font-size: 28px;
+    color: #00ff88;
+    margin-bottom: 8px;
+}
+
+.footer-left p {
+    opacity: 0.7;
+    font-size: 15px;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #00ff88;
+}
+
+/* Social Links */
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: #00ff88;
+}
+
+/* Bottom Copyright */
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-links {
+        align-items: center;
+    }
+}
+
