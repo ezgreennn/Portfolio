@@ -1,0 +1,1375 @@
+/* PAGE BACKGROUND (so it matches your navbar theme) */
+body {
+    background: #0a0f0a;
+    color: white;
+}
+/* MAIN SECTION */
+.certificates {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.certificates h2 {
+    color: #00ff88;
+    margin-bottom: 30px;
+}
+
+/* FLEXBOX CONTAINER */
+.cert-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* THE CARD */
+.cert-card {
+    width: 280px;
+    padding: 15px;
+    background: #1a1a1a; /* Solid dark background is simpler than glassmorphism */
+    border: 1px solid #333;
+    border-radius: 10px;
+    transition: 0.3s; /* Simple, smooth transition */
+}
+
+/* THE IMAGE */
+.cert-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* THE TEXT */
+.cert-card h3 {
+    color: #00ff88;
+    margin: 15px 0 10px;
+    font-size: 18px;
+}
+
+.cert-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ccc;
+    text-align: left;
+}
+
+/* SIMPLE HOVER */
+.cert-card:hover {
+    border-color: #00ff88;
+    transform: translateY(-5px);
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates - Ezean</title>
+    <link rel="stylesheet" href="certificate.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2 class="logo">Ezean</h2>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="certificate.html">Certificates</a>
+            <a href="contact.html">Contacts</a>
+        </div>
+    </nav>
+
+    <section class="certificates">
+    <h2>My Certificate</h2>
+
+    <div class="cert-container">
+
+        <div class="cert-card">
+    <img src="picture/nc2.jpg" alt="NC II Certificate">
+    <h3>NC II - Computer Systems Servicing</h3>
+    <p>
+        National Certificate Level II in Computer Systems Servicing (TESDA).<br>
+        Certified on March 06, 2025 • Valid until March 05, 2030<br><br>
+        Covers core competencies in installing & configuring computer systems, setting up computer networks, and maintaining & repairing computer systems and networks.
+    </p>
+</div>
+
+    </div>
+</section>
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0a0f0a;
+    color: white;
+}
+
+.contact-page {
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    max-width: 900px;
+    width: 100%;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-header h1 {
+    font-size: 42px;
+    color: #00ff88;
+    margin-bottom: 10px;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px;
+}
+
+/* FORM STYLING */
+.contact-form {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 255, 136, 0.1);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #00ff88;
+    font-size: 14px;
+}
+
+.input-group input, 
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    background: #151a15;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus, 
+.input-group textarea:focus {
+    border-color: #00ff88;
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.2);
+}
+
+.contact-btn {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid #00ff88;
+    color: #00ff88;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #00ff88;
+    color: black;
+}
+
+/* INFO STYLING */
+.contact-info h3 {
+    color: #00ff88;
+    margin-bottom: 5px;
+}
+
+.info-item {    
+    margin-bottom: 30px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;              
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #00ff88;
+    opacity: 1;
+    padding-left: 5px;
+}
+
+.back-btn {
+    display: block;
+    margin: 50px auto 0;
+    width: fit-content;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #00ff88;
+    border: solid #00ff88;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.back-btn:hover{
+    color: black;
+    background: #00ff88;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Ezean Alagadmo</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav>
+        <h2 class="logo">Ezean</h2>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="project.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="contact-page">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h1>Get In Touch</h1>
+                <p>Have a question or want to work together? Send me a message!</p>
+            </div>
+
+            <div class="contact-content">
+                <form action="#" class="contact-form">
+                    <div class="input-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="contact-btn">Send Message</button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>Location</h3>
+                        <p>Pampanga, Philippines</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Email</h3>
+                        <p>ezean.alagadmo@example.com</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/ezean.alagadmo.2024/" target="_blank">Facebook</a>
+                        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                        <a href="#" target="_blank">GitHub</a>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    </div>
+    <a href="index.html" class="btn back-btn">← Back to Home</a>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezean Alagadmo | Aspiring Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2 class="logo">Ezean</h2>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="certificate.html">Certificates</a>
+            <a href="contact.html">Contacts</a>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="hero">
+        <div class="left">
+            <h3>Hello, I'm</h3> 
+            <h1>EZEAN ALAGADMO</h1>
+            <h2>Aspiring Web Developer</h2>
+            <p>
+                Passionate about building modern and responsive websites.
+                I enjoy turning ideas into clean and functional designs.
+            </p>
+            <a href="MyProgress.html" class="btn">See My Progress</a>
+        </div>
+
+        <div class="right">
+            <div class="card">
+                <img src="picture/EZean pic" alt="Ezean Alagadmo profile">
+                <h3>Ezean Alagadmo</h3>
+                <p>Online</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm <span>Ezean Alagadmo</span>, an aspiring web developer.
+                I'm currently learning how to build modern and responsive websites
+                using HTML and CSS. I enjoy designing clean interfaces and improving
+                my skills step by step.
+            </p>
+
+            <p>
+                My goal is to become a professional developer and create websites
+                that are both functional and visually appealing. I'm always exploring
+                new ideas and pushing myself to improve.
+            </p>
+        </div>
+    </section>
+
+        <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h2 class="logo">Ezean</h2>
+                <p>Aspiring Web Developer from Pampanga</p>
+            </div>
+            
+            <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="project.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="#" target="_blank">GitHub</a>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/ezean.alagadmo.2024/" target="_blank">Facebook</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ezean Alagadmo. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0a0f0a;
+    color: white;
+}
+
+
+/* MY PROGRESS SECTION - Simple Version */
+.progress-section {
+    padding: 120px 80px;
+    background: #0d140d;
+    min-height: 100vh;
+}
+
+.section-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.progress-section h2 {
+    font-size: 36px;
+    color: #00ff88;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    text-align: center;
+    opacity: 0.8;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background: rgba(255,255,255,0.06);
+    padding: 24px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-card h3 {
+    color: #00ff88;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    opacity: 0.85;
+    line-height: 1.5;
+}
+
+.progress-note {
+    text-align: center;
+    margin-top: 60px;
+    opacity: 0.75;
+    font-size: 16px;
+}
+
+/* Simple Back Button */
+.back-button {
+    display: inline-block;
+    color: #00ff88;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #00ff88;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #00ff88;
+    color: black;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="myprogress.css">
+</head>
+<body>
+    
+       <!-- NAVBAR -->
+    <nav>
+        <h2 class="logo">Ezean</h2>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="certificate.html">Certificates</a>
+            <a href="contact.html">Contacts</a>
+        </div>
+    </nav>
+    
+    <!-- MY PROGRESS SECTION -->
+<section id="progress" class="progress-section">
+    <div class="section-container">
+        
+        <!-- Back Button -->
+        <a href="index.html" class="back-button">
+            ← Back to Home
+        </a>
+
+        <h2>My Current Progress</h2>
+        <p class="section-subtitle">Skills I'm learning right now</p>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>HTML5</h3>
+                <p>Building clean and semantic websites</p>
+            </div>
+            <div class="skill-card">
+                <h3>CSS3</h3>
+                <p>Flexbox, Grid, and modern styling</p>
+            </div>
+            <div class="skill-card">
+                <h3>Responsive Design</h3>
+                <p>Making websites work on mobile & desktop</p>
+            </div>
+            <div class="skill-card">
+                <h3>JavaScript Basics</h3>
+                <p>Currently learning interactivity</p>
+            </div>
+        </div>
+
+        <p class="progress-note">
+            I'm just starting my journey as a web developer.<br>
+            I'm consistent and always learning something new every day.
+        </p>
+    </div>
+</section>
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Added to keep logo and menu aligned */
+    padding: 15px 50px;
+    position: fixed;
+    z-index: 1000;
+    
+    /* The "Not Dry" additions */
+    background: rgba(16, 21, 16, 0.8); /* Dark tint so the blur looks better */
+    backdrop-filter: blur(10px); 
+    border-bottom: 1px solid rgba(0, 255, 136, 0.1); /* Subtle neon line */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Added depth */
+}
+
+.logo {
+    color: #00ff88;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.menu a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.menu a:hover {
+    color: #00ff88;
+    text-shadow: 0 0 8px rgba(0, 255, 136, 0.5); /* Subtle glow on hover */
+}
+
+/* Added active state */
+.menu a.active {
+    color: #00ff88;
+    border-bottom: 2px solid #00ff88;
+    padding-bottom: 5px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0a0f0a;
+    color: white;
+}
+
+.projects-page {
+    padding: 120px 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.header h1 {
+    font-size: 42px;
+    color: #00ff88;
+    margin-bottom: 10px;
+}
+
+.header p {
+    opacity: 0.7;
+}
+
+/* THE GRID */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* THE CARD */
+.project-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(0, 255, 136, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #00ff88;
+    box-shadow: 0 10px 30px rgba(0, 255, 136, 0.1);
+}
+
+.project-img img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.project-info {
+    padding: 25px;
+}
+
+.tags {
+    margin-bottom: 15px;
+}
+
+.tags span {
+    font-size: 11px;
+    color: #00ff88;
+    background: rgba(0, 255, 136, 0.1);
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-right: 5px;
+    border: 1px solid rgba(0, 255, 136, 0.2);
+}
+
+.project-info h3 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.project-info p, .p-text {
+    font-size: 15px;
+    opacity: 0.7;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.view-link {
+    text-decoration: none;
+    color: #00ff88;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.view-link:hover {
+    letter-spacing: 1px;
+}
+
+.back-btn {
+    display: block;
+    margin: 50px auto 0;
+    width: fit-content;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #00ff88;
+    border: solid #00ff88;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.back-btn:hover{
+    color: black;
+    background: #00ff88;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | Ezean Alagadmo</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+        <!-- NAVBAR -->
+    <nav>
+        <h2 class="logo">Ezean</h2>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="certificate.html">Certificates</a>
+            <a href="contact.html">Contacts</a>
+        </div>
+    </nav>
+
+    <section class="projects-page">
+        <div class="container">
+            <div class="header">
+                <h1>My Projects</h1>
+                <p>A collection of my work as an aspiring web developer.</p>
+            </div>
+
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://v.wpimg.pl/NmI2LmpwYQwoUDpeXwxsGWsIbgQZVWJPPBB2T18UYVt9AjRURkdhAGdTORkfHDsBPRw8AV8RKx87Uz4EXUN2VWRVOA9dByEKLFNhHxFafQh4BnoPRlkkHS4QMQ" alt="Ferrari Garage">
+                    </div>
+                    <div class="project-info">
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <h3>Ferrari Digital Garage</h3>
+                        <p>A technical spec showcase for high-performance cars. Features clean data tables and responsive layouts.</p>
+                        <a href="#" class="view-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&q=80&w=500" alt="Portfolio Site">
+                    </div>
+                    <div class="project-info">
+                        <div class="tags">
+                            <span>Responsive</span>
+                            <span>Design</span>
+                        </div>
+                        <h3>Personal Portfolio</h3>
+                        <div class="p-text">My official portfolio website designed with a dark neon aesthetic.</div>
+                        <a href="#" class="view-link">View Code →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="picture/Enrollment_form.PNG" alt="Ferrari Garage">
+                    </div>
+                    <div class="project-info">
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <h3>College Enrollment Form</h3>
+                        <p>A basic form to collect student details, including text inputs, dropdown menus, and checkboxes.</p>
+                        <a href="https://ezgreennn.github.io/Ezean_Form/" class="view-link">View Project →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    </div>
+    <a href="index.html" class="btn back-btn">← Back to Home</a>
+    </div>
+
+</body>
+</html>
+/* 1. THE BASICS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #0d110d; /* Deep dark green-tinted black */
+    color: #e0e0e0;
+    padding: 80px 20px;
+}
+
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 2. HEADER BOX */
+.resume-header {
+    background: #161b16; 
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    /* Soft glow shadow */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 255, 136, 0.05);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.resume-profile-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid #00ff88;
+}
+
+.header-info h1 {
+    color: #00ff88;
+    font-size: 28px;
+}
+
+.header-info p {
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+/* 3. DOWNLOAD BUTTON */
+.download-btn {
+    padding: 10px 20px;
+    background: #00ff88;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 255, 136, 0.2);
+}
+
+.download-btn:hover {
+    box-shadow: 0 6px 20px rgba(75, 195, 139, 0.4);
+}
+
+/* 4. CONTENT CARDS */
+.resume-section {
+    background: #161b16;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.resume-section h2 {
+    color: #00ff88;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+    padding-bottom: 10px;
+}
+
+.resume-item {
+    margin-bottom: 25px;
+}
+
+.resume-item h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.date {
+    font-size: 14px;
+    color: #00ff88;
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+.resume-item p {
+    line-height: 1.6;
+    color: #b0b0b0;
+}
+
+/* 5. SKILLS PILLS */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills-list span {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 136, 0.3);
+    padding: 8px 16px;
+    border-radius: 50px; /* Pill shape */
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.back-btn {
+    display: block;
+    margin: 50px auto 0;
+    width: fit-content;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #00ff88;
+    border: solid #00ff88;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.back-btn:hover{
+    color: black;
+    background: #00ff88;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Ezean Alagadmo</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2 class="logo">Ezean</h2>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="certificate.html">Certificates</a>
+            <a href="contact.html">Contacts</a>
+        </div>
+    </nav>
+
+    <section class="resume-page">
+        <div class="resume-container">
+<header class="resume-header">
+                <div class="header-left">
+                    <img src="picture/EZean pic" alt="Ezean Alagadmo" class="resume-profile-pic">
+                    <div class="header-info">
+                        <h1>My Resume</h1>
+                        <p>Ezean Alagadmo - Aspiring Web Developer</p>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <a href="#" class="download-btn">Download PDF</a>
+                </div>
+            </header>
+
+            <div class="resume-section">
+                <h2>Education</h2>
+                <div class="resume-item">
+                    <h3>High School Graduate</h3>
+                    <p class="date">Class of 2026</p>
+                    <p>Completed secondary education with a focus on core academic subjects and technical foundations.</p>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h2>Work Experience</h2>
+                <div class="resume-item">
+                    <h3>Work Immersion Program</h3>
+                    <p class="date">2025 - 2026</p>
+                    <p>Gained hands-on experience in a professional environment, focusing on workplace discipline and task management.</p>
+                </div>
+                <div class="resume-item">
+                    <h3>Retail Sales</h3>
+                    <p>Managed cash transactions and customer service in a retail setting (Sales/Balloons).</p>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h2>Technical Skills</h2>
+                <div class="skills-list">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>Responsive Design</span>
+                    <span>Frontend Development</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    </div>
+    <a href="index.html" class="btn back-btn">← Back to Home</a>
+    </div>
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0a0f0a;
+    color: white;
+    
+}
+
+.logo {
+    color: #00ff88;
+}
+
+.menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #00ff88;
+}
+
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    background: linear-gradient(rgba(10, 15, 10, 0.75), rgba(10, 15, 10, 0.85)), 
+                url('https://static.vecteezy.com/system/resources/thumbnails/017/798/493/small/dark-abstract-green-light-background-with-hexagon-mesh-pattern-decoration-vector.jpg') center/cover no-repeat;
+}
+
+/* LEFT */
+.left h1 {
+    font-size: 50px;
+    color: #00ff88;
+}
+
+.left h2 {
+    margin: 10px 0;
+}
+
+.left p {
+    max-width: 400px;
+    margin: 20px 0;
+    opacity: 0.8;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 1px solid #00ff88;
+    color: #00ff88;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #00ff88;
+    color: black;
+}
+
+/* RIGHT CARD */
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    box-shadow: 0 0 40px rgba(0,255,136,0.3);
+}
+
+.card img {
+    width: 150px;
+    border-radius: 15px;
+}
+
+/* ABOUT SECTION */
+.about {
+    padding: 100px 80px;
+    background: #0d140d;
+}
+
+.about-container {
+    max-width: 800px;
+}
+
+.about h2 {
+    font-size: 35px;
+    color: #00ff88;
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+.about span {
+    color: #00ff88;
+    font-weight: bold;
+}
+
+
+/* ========== FOOTER ========== */
+footer {
+    background: #0a0f0a;
+    padding: 60px 80px 30px;
+    border-top: 1px solid rgba(0, 255, 136, 0.2);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.footer-left .logo {
+    font-size: 28px;
+    color: #00ff88;
+    margin-bottom: 8px;
+}
+
+.footer-left p {
+    opacity: 0.7;
+    font-size: 15px;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #00ff88;
+}
+
+/* Social Links */
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: #00ff88;
+}
+
+/* Bottom Copyright */
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-links {
+        align-items: center;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0a0f0a;
+    color: white;
+}
+/* ABOUT PAGE */
+.about-page {
+    padding: 140px 80px 120px;
+    background: #0a0f0a;
+    min-height: 100vh;
+}
+
+.about-container {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.about-page h1 {
+    font-size: 42px;
+    color: #00ff88;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-page p {
+    font-size: 17px;
+    line-height: 1.75;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.about-page span {
+    color: #00ff88;
+    font-weight: bold;
+}
+
+.info-box {
+    background: rgba(255,255,255,0.06);
+    padding: 28px;
+    border-radius: 16px;
+    margin: 45px 0;
+    border-left: 5px solid #00ff88;
+}
+
+.info-box p {
+    margin-bottom: 12px;
+}
+
+.back-btn {
+    display: block;
+    margin: 50px auto 0;
+    width: fit-content;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #00ff88;
+    border: solid #00ff88;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.back-btn:hover{
+    color: black;
+    background: #00ff88;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Ezean Alagadmo</title>
+    <link rel="stylesheet" href="navbar.css">`
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+      <!-- NAVBAR -->
+    <nav>
+        <h2 class="logo">Ezean</h2>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="certificate.html">Certificates</a>
+            <a href="contact.html">Contacts</a>
+        </div>
+    </nav>
+
+    <section class="about-page">
+        <div class="about-container">
+            <h1>About Me</h1>
+            
+            <p>
+                Hi! I'm <span>Ezean Alagadmo</span>, an aspiring web developer from Pampanga.
+            </p>
+
+            <p>
+                I'm currently focused on learning HTML and CSS to build modern, responsive, and clean websites. 
+                I love turning ideas into functional designs and I'm enjoying the learning process.
+            </p>
+
+            <p>
+                My journey has just started, but I'm consistent and motivated to improve every single day. 
+                I believe small daily progress will lead me to become a skilled developer in the future.
+            </p>
+
+            <div class="info-box">
+                <p><strong>From:</strong> Pampanga, Philippines</p>
+                <p><strong>Currently Learning:</strong> HTML, CSS, Responsive Design</p>
+                <p><strong>Goal:</strong> Become a professional Frontend Developer</p>
+            </div>
+
+            <a href="index.html" class="btn back-btn">← Back to Home</a>
+        </div>
+    </section>
+
+</body>
+</html>
